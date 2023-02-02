@@ -109,8 +109,9 @@ border-radius: 10px;
             width: 50px;
             height: 50px;
             border-radius:20px;
-            background:#26a44a;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            background:rgb(161, 201, 234);
+            /* background: #016fb9; */
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
         }
         
         .fab-icon-holder:hover{
@@ -126,28 +127,32 @@ border-radius: 10px;
             font-size:1.1rem;
             color: #ffffff;
         }
-        
         .fab {
             width:60px;
             height: 60px;
-            background:crimson;
+            background:rgb(170, 79, 79);
         }
-        
+        .fab-label a{
+            color:black;
+            font-size:18px;
+        }
+        .fab-label a:hover{
+            text-decoration: none;
+        }
         .fab-options {
             list-style-type: none;
             position: absolute;
             right:0px;
             display: flex;
             flex-direction:column;
-            bottom:70px;
-            background-color: rgba(0,0,0,1);
+            bottom:50px;
+            background:rgb(161, 201, 234);
             border-radius:25px;
             padding:10px;
             opacity: 0;
             transition: all 0.3s ease;
             transform: scale(0);
             transform-origin:85% bottom;
-            
         }
         
         .fab:hover + .fab-options ,.fab-options:hover{
@@ -160,7 +165,7 @@ border-radius: 10px;
             padding: 5px;
         }
         .fab-icon-holder:hover{
-            transform: rotateZ(-45deg);
+            transform:scale(1.1);
         }
         .fab-label {
             padding:5px;
@@ -169,16 +174,14 @@ border-radius: 10px;
             white-space: nowrap;
             border-radius: 5px;
             display: block;
-            font-size: 16px;
+            font-size: 18px;
             height:40px;
             justify-content: center;
             text-align: center;
             align-items: center;
             width:fit-content;
             height: max-content;
-            /* background-color:black; */
-            color:aliceblue;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            color:black;
             margin: 10px;
         }
         .fab-icon-holder a{

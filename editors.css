@@ -136,10 +136,10 @@ text-align: center;
         .fab-icon-holder {
             width: 50px;
             height: 50px;
-            border-radius:20px;
-            background:#26a44a;
+            border-radius:15px;
+            background:rgb(161, 201, 234);
             /* background: #016fb9; */
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
         }
         
         .fab-icon-holder:hover{
@@ -155,21 +155,26 @@ text-align: center;
             font-size:1.1rem;
             color: #ffffff;
         }
-        
         .fab {
             width:60px;
             height: 60px;
-            background:crimson;
+            background:rgb(170, 79, 79);
         }
-        
+        .fab-label a{
+            color:black;
+            font-size:18px;
+        }
+        .fab-label a:hover{
+            text-decoration: none;
+        }
         .fab-options {
             list-style-type: none;
             position: absolute;
             right:0px;
             display: flex;
             flex-direction:column;
-           bottom:70px;
-            background-color: rgba(0,0,0,1);
+            bottom:70px;
+            background:rgb(161, 201, 234);
             border-radius:25px;
             padding:10px;
             opacity: 0;
@@ -188,7 +193,7 @@ text-align: center;
             padding: 5px;
         }
         .fab-icon-holder:hover{
-            transform: rotateZ(-60deg);
+            transform:scale(1.1);
         }
         .fab-label {
             padding:5px;
@@ -197,15 +202,14 @@ text-align: center;
             white-space: nowrap;
             border-radius: 5px;
             display: block;
-            font-size: 16px;
+            font-size: 18px;
             height:40px;
             justify-content: center;
             text-align: center;
             align-items: center;
             width:fit-content;
             height: max-content;
-            color:aliceblue;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            color:black;
             margin: 10px;
         }
         .fab-icon-holder a{

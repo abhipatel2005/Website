@@ -103,6 +103,10 @@
             font-family:bree serif;
             font-weight:100;
         }
+        .fab-label a{
+            color:black;
+            font-size:18px;
+        }
         .fab-icon-holder a{
             text-align: center;
             width:2px;
