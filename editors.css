@@ -167,6 +167,9 @@ text-align: center;
         .fab-label a:hover{
             text-decoration: none;
         }
+        .fab-label a:visited{
+            color:black;
+        }
         .fab-options {
             list-style-type: none;
             position: absolute;

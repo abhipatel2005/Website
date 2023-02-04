@@ -73,7 +73,7 @@ font-weight: bolder;
 border-radius: 10px;
 }
 .links a:hover{
-    transform:scale(1.2);
+    transform:scale(0.9);
 }
 .bottom{
             background-color: rgb(23, 74, 124);
@@ -135,6 +135,9 @@ border-radius: 10px;
         .fab-label a{
             color:black;
             font-size:18px;
+        }
+        .fab-label a:visited{
+            color:black;
         }
         .fab-label a:hover{
             text-decoration: none;

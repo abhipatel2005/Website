@@ -28,9 +28,8 @@
         }
         .logo{
             width: 30%;
-            float: left;
-            line-height: 100px;
-
+            line-height:80px;
+            margin:0px;
         }
         .logo p{
             text-decoration: none;
@@ -38,11 +37,10 @@
             font-family: bignoodletitling;
             color: white;
             letter-spacing: 5px;
-            margin:0px;
         }
         .fab-container {
             position: fixed;
-            top: 35px;
+            top:20px;
             right: 50px;
             z-index:9;
             cursor: pointer;
@@ -107,20 +105,21 @@
             color:black;
             font-size:18px;
         }
-        .fab-icon-holder a{
-            text-align: center;
-            width:2px;
-            height:2px;
-            border-radius:20px;
-            background-color:red;
-            opacity:0px;
+        .fab-label a:hover{
+            text-decoration:none;
+        }
+        .fab-label a:active{
+            color:red;
+        }
+        .fab-label a:visited{
+            color:black;
         }
         span{
             margin:10px;
         }
         .content-area{
             width:100%;
-            height: 200px;
+            height:200px;
             top:150px;
             position: relative;
         }
@@ -279,12 +278,16 @@
 @media (max-width:321px){
 
     .fab,.fab-container,.fab-icon-holder{
-        right:2px;
-        height:45px;
-        width:45px;
+        right:1px;
+        height:35px;
+        width:35px;
         border-radius:15px;
         align-items: center;
-        margin-right:0px;
+    }
+
+    .content-area{
+        position:relative;
+        top:130px;
     }
 }
 @media (max-width:426px){
@@ -292,6 +295,20 @@
     .facts button{
         font-size: 1rem;
         width:80%;
+    }
+
+    .fab,.fab-container,.fab-icon-holder{
+        right:5px;
+        height:55px;
+        width:55px;
+        border-radius:15px;
+        align-items: center;
+    }
+    .logo p{
+        font-size:1.5rem;
+        font-family: bignoodletitling;
+        color: white;
+        margin:0px;
     }
 }
         
