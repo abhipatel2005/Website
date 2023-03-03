@@ -201,12 +201,12 @@
             margin:10px 20px;
             font-size:1.1rem;
             color:white;
-            transition:all 0.1s ease-in-out;
+            transition:all 0.2ms ease-in-out;
             font-weight:bolder;
         }
-        .box_model:hover{
-            transform:scale(1.10);
-                }
+        #item_1:hover,#item_2:hover,#item_3:hover,#item_4:hover{
+            transform: scale(1.1);
+        }
         .box_model h4{
             font-weight:100;
                 }
