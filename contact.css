@@ -15,13 +15,11 @@ header{
 color:white;
 background-color:rgb(7, 7, 99);
 font-size: 35px;
-font-weight:600;
 text-align: center;
-padding:8px;
+padding:10px;
 width:min-content;
 font-family:Copperplate Gothic;
-border-radius:10px;
-font-weight:600;
+font-weight:bold;
 transform:translate(20);
 transition:all 1s;
 }
@@ -41,7 +39,6 @@ font-size: 20px;
 display: flex;
 padding: 10px;
 margin: 10px;
-max-width:100%;
 align-items:center;
 }
 .founder li{
@@ -52,11 +49,7 @@ align-items:center;
     max-width:100%;
     align-items: center;
 }
-/* .vl{
-    border:1px solid navy;
-    max-height:100%;
 
-} */
 p{
 font-family:Copperplate Gothic;
 font-weight:400;
@@ -181,7 +174,7 @@ animation:shake 2s ease-in-out infinite alternate-reverse both;
         max-width:250px;
         border-radius:30px;
         border: 0px solid black;
-        box-shadow:5px 8px 8px gray;
+        box-shadow:5px 5px 5px gray;
     }
     li{
         padding-bottom:10px;
@@ -197,6 +190,5 @@ animation:shake 2s ease-in-out infinite alternate-reverse both;
     }
     .share p{
         font-size:1.2rem;
-    }
-    
+    }   
 }
