@@ -99,6 +99,10 @@ button{
     background-color:rgb(23, 74, 124);
     font-size:1.2rem;
 }
+button:hover{
+    background-color:green;
+    transform: scale(1.2);
+}
 .flex_container{
     padding:15px;
     margin:10px;
