@@ -113,7 +113,8 @@ header{
     color:black;
 }
 span{
-    margin:10px;user-select: none;
+    margin:10px;
+    user-select: none;
 }
 .content-area{
     width:100%;

@@ -26,7 +26,7 @@ header p{
     letter-spacing: 5px;
     margin:0px;
 }
-/* h3{
+h3{
     background-color:rgb(23, 74, 124);
     border-radius:20px;
     width: fit-content;
@@ -40,7 +40,7 @@ h4{
     padding: 10px;
     color: white;
     margin:10px;
-} */
+}
 h3{
     background-color:rgb(23, 74, 124);
     border-radius:20px;
@@ -73,8 +73,9 @@ h4{
     justify-content:center;
 }
 .img{
+    display:block;
     margin:30px auto;
-    text-align:center;
+    text-align: center;
 }
 .links{
     display:flex;
