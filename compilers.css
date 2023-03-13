@@ -57,12 +57,14 @@ span{
     opacity: 0;
     font-weight:bold;
     background-color:aliceblue;
-    padding:3px;
+    padding:5px;
     color:rgb(23, 74, 124);
     position:fixed;
     right:10px;
+    font-size:1.3rem;
     bottom:5px;
     border-radius:5px;
+    transition:all 0.3s;
 }
 .comp:hover span{
     opacity:1;
