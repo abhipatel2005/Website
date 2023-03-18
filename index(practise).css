@@ -96,8 +96,8 @@ header{
     color:black;
     /* box-shadow: 0 6px 20px rgba(0,0,0,0.2); */
     margin: 10px;
-    font-family:bree serif;
-    font-weight:100;
+    /* font-family:bree serif; */
+    font-weight:600;
 }
 .fab-label a{
      color:black;

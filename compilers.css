@@ -53,17 +53,17 @@ h4{
     text-decoration: none;
     overflow:hidden;
 }
-span{
-    opacity: 0;
-    font-weight:bold;
-    background-color:aliceblue;
-    padding:5px;
-    color:rgb(23, 74, 124);
+.read{
     position:fixed;
     right:10px;
-    font-size:1.3rem;
     bottom:5px;
+    opacity: 0;
+    background-color:aliceblue;
+    color:rgb(23, 74, 124);
     border-radius:5px;
+    padding:5px;
+    font-weight:bold;
+    font-size:1.3rem;
     transition:all 0.3s;
 }
 .comp:hover span{
@@ -114,7 +114,7 @@ p{
     background-color: rgb(23, 74, 124);
     color: aliceblue;
     text-decoration: none;
-     text-align: center;
+    text-align: center;
 }
 .bottom p{
     background:rgb(23, 74, 124);
@@ -142,9 +142,8 @@ p{
 .fab-icon-holder {
     width: 50px;
     height: 50px;
-    border-radius:20px;
+    border-radius:15px;
     background:rgb(161, 201, 234);
-    /* background: #016fb9; */
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 .fab-icon-holder:hover{
@@ -176,18 +175,18 @@ p{
 }
 .fab-options {
     list-style-type: none;
-    position: absolute;
-    right:0px;
     display: flex;
     flex-direction:column;
-    bottom:50px;
-    background:rgb(161, 201, 234);
-    border-radius:25px;
-    padding:10px;
+    position:absolute;
+    right:0px;
+    bottom:-15px;
     opacity: 0;
+    background:rgb(161, 201, 234);
+    border-radius:25px 25px 0px 25px;
+    padding:10px;
     transition: all 0.3s ease;
     transform: scale(0);
-    transform-origin:85% bottom;
+    transform-origin:90% bottom;
 }
 .fab:hover + .fab-options ,.fab-options:hover{
     opacity: 1;
@@ -195,7 +194,7 @@ p{
 }
 .fab-options li {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 5px;
 }
 .fab-icon-holder:hover{
@@ -217,6 +216,7 @@ p{
     height: max-content;
     color:black;
     margin: 10px;
+    font-weight:bolder;
 }
 .fab-icon-holder a{
     text-decoration:none;
@@ -225,7 +225,7 @@ p{
     width: 50px;
     height: 50px;
     border-radius:20px;
-    font-weight: bolder;
+    font-weight:bolder;
     border:0px solid black;
 }
 @media (max-width:426px){

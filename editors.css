@@ -79,7 +79,8 @@ h4{
 }
 .links{
     display:flex;
-    justify-content: center;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 .links a{
     color:aliceblue;
@@ -218,7 +219,7 @@ p{
     width: 50px;
     height: 50px;
     border-radius:20px;
-    font-weight: bolder;
+    font-weight:500;
     border:0px solid black;
 }
 @media (max-width:426px){
@@ -252,7 +253,7 @@ p{
         text-align:left;
         margin:auto 15px;
     }
-.bottom p{
+    .bottom p{
         font-size:0.9rem;
     }
 }
