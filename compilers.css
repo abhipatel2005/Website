@@ -134,8 +134,8 @@ p{
 }
 .fab-container {
     position: fixed;
-    bottom: 35px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
     z-index: 999;
     cursor: pointer;
 }
@@ -178,8 +178,8 @@ p{
     display: flex;
     flex-direction:column;
     position:absolute;
-    right:0px;
-    bottom:-15px;
+    right:-10px;
+    bottom:-20px;
     opacity: 0;
     background:rgb(161, 201, 234);
     border-radius:25px 25px 0px 25px;
@@ -190,7 +190,7 @@ p{
 }
 .fab:hover + .fab-options ,.fab-options:hover{
     opacity: 1;
-    transform:scale(1.05);
+    transform:scale(1);
 }
 .fab-options li {
     display: flex;
@@ -237,13 +237,13 @@ p{
         max-width:100%;
         font-size:1.2rem;
     }
-    .links{
+    /* .links{
         display:block;
         align-items:center;
     }
     a{
         display:block;
-    }
+    } */
     .images .img{
         display:flex;
         align-items:center;

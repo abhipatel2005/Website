@@ -17,29 +17,9 @@ header{
     color: white;
     font-weight: 900;
     max-width: 100%;
-}
-header p{
-    text-decoration: none;
     font-size:2rem;
     font-family: bignoodletitling;
-    color: white;
     letter-spacing: 5px;
-    margin:0px;
-}
-h3{
-    background-color:rgb(23, 74, 124);
-    border-radius:20px;
-    width: fit-content;
-    padding: 10px;
-    color: white;
-}
-h4{
-    background-color:rgb(23, 74, 124);
-    border-radius:20px;
-    width: fit-content;
-    padding: 10px;
-    color: white;
-    margin:10px;
 }
 h3{
     background-color:rgb(23, 74, 124);
@@ -62,7 +42,7 @@ h4{
     border-radius:20px;
     padding: 8px;
     margin-bottom:10px;
-    box-shadow: 2px 2px 2px 3px rgb(193, 191, 191);
+    box-shadow: 3px 3px 2px 0px rgb(0, 0, 0, 0.2);
 }
 .images .img p{
     margin: auto;
@@ -129,8 +109,8 @@ p{
 }
 .fab-container {
     position: fixed;
-    bottom: 35px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
     z-index: 999;
     cursor: pointer;
 }
@@ -171,10 +151,10 @@ p{
 .fab-options {
     list-style-type: none;
     position: absolute;
-    right:0px;
+    right:-10px;
     display: flex;
     flex-direction:column;
-    bottom:0px;
+    bottom:-10px;
     background:rgb(161, 201, 234);
     border-radius:25px 25px 0px 25px;
     padding:10px;
