@@ -57,30 +57,32 @@ header{
     background:rgb(161, 201, 234);
 }
 .fab-options {
+    /* display: flex; */
+    /* flex-direction:column; */
     position: absolute;
-    display: flex;
-    flex-direction:column;
-    right:0px;
+    right:-55px;
     top:0px;
+    width:13rem;
+    height:90vh;
     background:rgb(161, 201, 234);
-    border-radius:20px;
-    border-top-right-radius:2px;
+    border-radius:20px 0px 0px 20px;
     padding:10px;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
-    transform-origin:100% top;
-} 
+    transform-origin:120% top;
+}
 .fab:hover + .fab-options ,.fab-options:hover{
     opacity: 1;
     transform:scale(1.05);
 }
 .fab-options li {
     display: flex;
-    justify-content: flex-end;
-    padding: 5px;
+    justify-content: flex-start;
+    padding: 10px;
 }
 .fab-icon-holder:hover{
     opacity:0.9;
+    background-color:rgb(23, 74, 124);
 }
 .fab-label {
     padding:5px;
@@ -96,25 +98,21 @@ header{
     color:black;
     /* box-shadow: 0 6px 20px rgba(0,0,0,0.2); */
     margin: 10px;
-    /* font-family:bree serif; */
     font-weight:600;
 }
 .fab-label a{
-     color:black;
+    display:flex;
+    color:black;
     font-size:18px;
 }
 .fab-label a:hover{
     text-decoration:none;
-}
-.fab-label a:active{
-    color:red;
 }
 .fab-label a:visited{
     color:black;
 }
 span{
     margin:10px;
-    user-select: none;
 }
 .content-area{
     width:100%;
@@ -160,7 +158,6 @@ button{
     font-size:1.5623rem;
     width: 400px;
     font-weight:600;
-    font-family:bree serif;
     letter-spacing:3px;
     margin: 10px;
     padding: 2px 8px 8px;
@@ -201,7 +198,7 @@ button:hover{
     font-weight:bolder;
 }
 #item_1:hover,#item_2:hover,#item_3:hover,#item_4:hover{
-    transform: scale(1.1);
+    transform:translateY(-8px);
 }
 .box_model h4{
     font-weight:100;
@@ -266,11 +263,6 @@ button:hover{
 
     header{ max-width: 100%; }
 }
-@media (max-width:392px){
-    .content-area{
-        height:250px;
-    }
-}
 @media (max-width:321px){
     .fab,.fab-container,.fab-icon-holder{
         right:1px;
@@ -290,7 +282,6 @@ button:hover{
         font-size: 1rem;
         width:80%;
     }
-
     .fab,.fab-container,.fab-icon-holder{
         right:5px;
         height:55px;
@@ -298,11 +289,17 @@ button:hover{
         border-radius:15px;
         align-items: center;
     }
+    .fab-options{
+        right:-40px;
+    }
     .logo p{
         font-size:1.5rem;
         font-family: bignoodletitling;
         color: white;
         margin:0px;
+    }
+    .content-area{
+        top:120px;
     }
 }
         
