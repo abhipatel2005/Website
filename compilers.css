@@ -157,9 +157,9 @@ p{
     text-decoration: none;
 }
 .fab-options {
-    list-style-type: none;
-    display: flex;
-    flex-direction:column;
+    /* list-style-type: none; */
+    /* display: flex; */
+    /* flex-direction:column; */
     position:absolute;
     right:-10px;
     bottom:-20px;
