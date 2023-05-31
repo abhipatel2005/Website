@@ -1,13 +1,21 @@
+:root{
+    --background-color:aliceblue;
+    --navbar-background-color:rgb(23, 74, 124);
+    --fab-options-background-color:rgb(161, 201, 234);
+    --fab-icon-background-color: rgb(170, 79, 79);
+    --default-text-color: white;
+    --text-color:black;
+}
 body{
-    background-color: aliceblue;
+    background-color: var(--background-color);
+    color:var(--default-text-color);
     padding: 0px;
     margin: 0px;
 }
 header{
     width: 100%;
-    background-color:rgb(23, 74, 124);
+    background-color: var(--navbar-background-color);
     margin:0px;
-    color: white;
     font-weight:700;
     padding:10px 0px;
     font-size:2rem;
@@ -19,13 +27,12 @@ h3{
     padding: 10px;
     margin:10px;
     border-radius:15px;
-    background-color:rgb(23, 74, 124);
-    color: white;
+    background-color: var(--navbar-background-color);
 }
 h4{
     width: fit-content;
-    background-color:rgb(23, 74, 124);
-    color: white;
+    background-color: var(--navbar-background-color);
+    color: var(--default-text-color);
     border-radius:15px;
     padding: 10px;
     margin:10px;
@@ -42,10 +49,10 @@ h4{
     padding: 10px;
     margin:10px;
     float:left;
-    background-color: aliceblue;
+    background-color: var(--background-color);
 }
 .comp{
-    background-color:rgb(23, 74, 124);
+    background-color: var(--navbar-background-color);
     width:25rem;
     height:14.5vh;
     margin:10px;
@@ -58,8 +65,8 @@ h4{
     right:10px;
     bottom:5px;
     opacity: 0;
-    background-color:aliceblue;
-    color:rgb(23, 74, 124);
+    background-color: var(--background-color);
+    color: var(--navbar-background-color);
     border-radius:5px;
     padding:5px;
     font-weight:bold;
@@ -74,7 +81,6 @@ h4{
     font-size:0.9rem;
 }
 .comp h4{
-    color:aliceblue;
     padding:10px 5px;
     margin:0px;
     font-weight:normal;
@@ -83,7 +89,6 @@ h4{
 #white{
     text-align:center;
     font-size:3rem;
-    color:white;
 }
 p{
     font-weight: 600;
@@ -92,16 +97,13 @@ p{
     margin:0px 0px 0px 10px;
 }
 .bottom{
-    background-color: rgb(23, 74, 124);
-    color: aliceblue;
+    background-color: var(--navbar-background-color);
     text-decoration: none;
     text-align:center;
     align-items: center;
     margin:0;
 }
 .bottom p{
-    background:rgb(23, 74, 124);
-    color:white;
     font-weight: bold;
     text-decoration: none;
     box-shadow:0 0 0 0;
@@ -126,7 +128,7 @@ p{
     width: 50px;
     height: 50px;
     border-radius:15px;
-    background:rgb(161, 201, 234);
+    background: var(--fab-options-background-color);
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 .fab-icon-holder:hover{
@@ -139,19 +141,18 @@ p{
     flex-direction: column;
     height: 100%;
     font-size:1.1rem;
-    color: #ffffff;
 }
 .fab {
     width:60px;
     height: 60px;
-    background:rgb(170, 79, 79);
+    background: var(--fab-icon-background-color);
 }
 .fab-label a{
-    color:black;
+    color: var(--text-color);
     font-size:18px;
 }
 .fab-label a:visited{
-    color:black;
+    color: var(--text-color);
 }
 .fab-label a:hover{
     text-decoration: none;
@@ -164,7 +165,7 @@ p{
     right:-10px;
     bottom:-20px;
     opacity: 0;
-    background:rgb(161, 201, 234);
+    background: var(--fab-options-background-color);
     border-radius:25px 25px 0px 25px;
     padding:10px;
     transition: all 0.3s ease;
@@ -197,9 +198,15 @@ p{
     align-items: center;
     width:fit-content;
     height: max-content;
-    color:black;
     margin: 10px;
-    font-weight:bolder;
+    /* font-weight:bolder; */
+    /* color:black; */
+}
+.fa{
+    color: var(--text-color);
+}
+.fa-th-large{
+    color:var(--default-text-color);
 }
 .fab-icon-holder a{
     text-decoration:none;
@@ -209,7 +216,7 @@ p{
     height: 50px;
     border-radius:20px;
     font-weight:bolder;
-    border:0px solid black;
+    /* border:0px solid var(--text-color); */
 }
 @media (max-width:426px){
     h3,h4{

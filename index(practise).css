@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --background-color:aliceblue;
+    --navbar-background-color:rgb(23, 74, 124);
+    --fab-options-background-color:rgb(161, 201, 234);
+    --fab-icon-background-color:rgb(56, 150, 227);
+    --button-colors:rgb(21,21,180);    
+    --default-text-color: white;
+    --text-color:black;
+}
 .material-symbols-rounded {
   font-variation-settings:
   'FILL' 1,
@@ -10,7 +19,8 @@
   'opsz' 48
 }
 body{
-  background-color: aliceblue;
+  background-color: var(--background-color);
+  color: var(--default-text-color);
   padding: 0px;
   margin: 0px;
   text-align: center;
@@ -20,10 +30,9 @@ header{
     width:100%;
     z-index:12;
     position:fixed;
-    background-color:rgb(23, 74, 124);
+    background-color: var(--navbar-background-color);
     padding: 10px;
     padding-right: 0px;
-    color: white;
     font-weight: 900;
 }
 .logo{
@@ -34,8 +43,7 @@ header{
 .logo p{
     text-decoration: none;
     font-size:2rem;
-    font-family: bignoodletitling;
-    color: white;
+    /* font-family: bignoodletitling; */
     letter-spacing: 5px;
 }
 .fab-container {
@@ -44,17 +52,20 @@ header{
     right: 50px;
     z-index:9;
     cursor: pointer;
+}
+h3{
+    color: var(--text-color);
 }    
 .fab-icon-holder {
     width: 50px;
     height: 50px;
     border-radius:20px;
-    background:rgb(56, 150, 227);
+    background:var(--fab-icon-background-color);
 } 
 .fab {
     width:60px;
     height: 60px;
-    background:rgb(161, 201, 234);
+    background: var(--fab-options-background-color);
 }
 .fab-options {
     /* display: flex; */
@@ -64,7 +75,7 @@ header{
     top:0px;
     width:13rem;
     height:90vh;
-    background:rgb(161, 201, 234);
+    background: var(--fab-options-background-color);
     border-radius:20px 0px 0px 20px;
     padding:10px;
     box-shadow:0px 10px 10px 3px rgba(0,0,0,0.5);
@@ -83,7 +94,7 @@ header{
 }
 .fab-icon-holder:hover{
     opacity:0.9;
-    background-color:rgb(23, 74, 124);
+    background-color: var(--navbar-background-color);
 }
 .fab-label {
     padding:5px;
@@ -96,21 +107,21 @@ header{
     height:40px;
     width:fit-content;
     height: max-content;
-    color:black;
+    /* color: var(--text-color); */
     /* box-shadow: 0 6px 20px rgba(0,0,0,0.2); */
     margin: 10px;
     font-weight:600;
 }
 .fab-label a{
     display:flex;
-    color:black;
+    color:var(--text-color);
     font-size:18px;
 }
 .fab-label a:hover{
     text-decoration:none;
 }
 .fab-label a:visited{
-    color:black;
+    color: var(--text-color);
 }
 span{
     margin:10px;
@@ -122,18 +133,17 @@ span{
     position: relative;
 }
 h2{
-    background-color:aliceblue;
-    color:rgb(21, 21, 180);
+    background-color: var(--background-color);
+    color:var(--button-colors);
     border-radius: 20px;
     width:98%;
     position: relative;
     padding: 2px;
     text-align: center;
-    text-shadow:1px 1px 1px rgb(21, 21, 180);
+    text-shadow:1px 1px 1px var(--button-colors);
 }
 .why{
-    background-color: rgb(23, 74, 124);
-    color: white;
+    background-color: var(--navbar-background-color);
     padding: 10px;
     border-radius: 20px;
 }
@@ -148,14 +158,14 @@ p{
     font-size: 25px;
     align-items: center;
     text-decoration:underline;
-    text-decoration-color:black;
+    text-decoration-color:var(--text-color);
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px aliceblue;
 }
 button{
-    background-color: white;
-    color: rgb(21, 21, 180);
-    border: 3px solid rgb(21, 21, 180);
+    background-color: var(--default-text-color);
+    color: var(--button-colors);
+    border: 3px solid var(--button-colors);
     font-size:1.5623rem;
     width: 400px;
     font-weight:600;
@@ -166,10 +176,10 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: rgb(21, 21, 180);
-    color: white;
+    background-color: var(--button-colors);
+    color: var(--default-text-color);
+    border: 3px solid var(--default-text-color);
     /* box-shadow: 2px 2px 2px rgb(21, 21, 180); */
-    border: 3px solid white;
 }
 .facts img{
     width: 100px;
@@ -188,13 +198,12 @@ button:hover{
 }
 .box_model{
     width:300px;
-    background-color: rgb(23, 74, 124);
+    background-color: var(--navbar-background-color);
     padding:10px;
     justify-content:space-between;
     border-radius: 20px;
     margin:10px 20px;
     font-size:1.1rem;
-    color:white;
     transition:all 0.2ms ease-in-out;
     font-weight:bolder;
 }
@@ -203,7 +212,7 @@ button:hover{
 }
 .box_model h4{
     font-weight:100;
-                }
+}
 .box_model img{
     width:130px;
     height:130px;
@@ -212,12 +221,9 @@ button:hover{
     margin: 10px;
 }
 .bottom{
-    background-color: rgb(23, 74, 124);
-    color:white;
+    background-color: var(--navbar-background-color);
 }
 .bottom p{
-    background:rgb(23, 74, 124);
-    color:white;
     font-weight: bold;
     text-decoration: none;
     box-shadow: none;
@@ -296,7 +302,6 @@ button:hover{
     .logo p{
         font-size:1.5rem;
         font-family: bignoodletitling;
-        color: white;
         margin:0px;
     }
     .content-area{
